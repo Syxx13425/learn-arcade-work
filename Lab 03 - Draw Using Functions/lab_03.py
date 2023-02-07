@@ -48,10 +48,10 @@ def main():
     draw_star(510,450,3)
     draw_star(290,560,5)
     draw_star(519,360,4)
-    draw_fish(333, 187, .06)
+    draw_fish(300, 180, .09)
     draw_fish(227, 170, .09)
     draw_fish(190, 130, .05)
-    draw_fish(400, 120, .1)
+    draw_fish(368, 120, .1)
     arcade.finish_render()
     arcade.run()
 
