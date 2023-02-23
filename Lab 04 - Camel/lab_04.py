@@ -53,7 +53,7 @@ def main():
             print("Your camel is getting tired.")
         if thirst > 4:
             print("You are thirsty!")
-        if natives_traveled == 15 miles_traveled:
+        if natives_traveled > 15:
             print("The natives are close!")
     while done:
         if thirst > 6:
