@@ -1,5 +1,5 @@
 import arcade
-import time
+
 
 def draw_section_outlines():
     # Draw squares on bottom
@@ -63,19 +63,49 @@ def draw_section_4():
 
 
 def draw_section_5():
-    # Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead.
-    pass
+    for row in range(30):
+        for column in range(30, row, -1):
+            print(column, row ==" ")
+            y = 305 + row * 10
+            x = column * 10 - 5
+            arcade.draw_rectangle_filled(x, y, 5, 5, arcade.color.WHITE)
+
+
 
 
 def draw_section_6():
-    pass
+    for row in range(30):
+            for column in range(30 - row):
+                x = 305 + column * 10
+                y = 305 + row * 10
+                arcade.draw_rectangle_filled(x, y, 5, 5, arcade.color.WHITE)
+            pass
+
+
+
+
+
+
+
 
 
 def draw_section_7():
+    for row in range(30):
+        for column in range(row + 1):
+
+            x = 605 + column * 10
+            y = 305 + row * 10
+            arcade.draw_rectangle_filled(x, y, 5, 5, arcade.color.WHITE)
     pass
 
 
 def draw_section_8():
+    for row in range(30):
+            for column in range():
+                x = 905 + column * 10
+                y = 305 + row * 10
+                arcade.draw_rectangle_filled(x, y, 5, 5, arcade.color.WHITE)
+
     pass
 
 
