@@ -14,28 +14,30 @@ def main():
     done = False
 
     # Bedroom 2 - 0 - (description, north, east, south, west)
-    room = Room("You are in the second bedroom, there is a door to the east.", 5, 1, None, None)
+    room = Room("You are in the second bedroom, there is "
+                "a door to the east.", 5, 1, None, None)
     room_list.append(room)
-    south_hall = Room("You are in the south hall, there is door to the east a door to the west"
-                      ".", 4, 2, None, 0)
+    south_hall = Room("You are in the south hall, there is door to the east"
+                      " a door to the west and a hall to the north", 4, 2, None, 0)
     room_list.append(south_hall)
-    kitchen = Room("You are now in the kitchen, there is a door to the north and a door to the west.",
-                   3, None, None,1)
+    kitchen = Room("You are now in the kitchen, there is a door to the north and"
+                   " a door to the west.", 3, None, None, 1)
     room_list.append(kitchen)
-    living_room = Room("You are in the living room, there is a door to the north, west and south.",
-                       7, None, 2, 4)
+    living_room = Room("You are the living room, there is a door to the north, west and"
+                       " south.", 7, None, 2, 4)
     room_list.append(living_room)
-    man_cave = Room("You are in the man cave with only one door to the south", None, None, 3, None,)
-    room_list.append(man_cave)
-
-    north_hall = Room("You are in the north hall there is hall to the south a door to the west"
-                      " and a door to the east.", None, 3, 1,5)
+    north_hall = Room("You are in the north hall there is hall to the south a door"
+                      " to the west and a door to the east.", None, 3, 1, 5)
     room_list.append(north_hall)
-    master_room = Room("You are in the Master bedroom you a door to the north and a door to the east."
-                    ,6, 4, 0, None)
+    master_room = Room("You are in the Master bedroom you a door to the north, east "
+                       "and a door to the south.", 6, 4, 0, None)
     room_list.append(master_room)
-    garage = Room("You are in the garage there is a door to the south,", None, None, 5, None)
+    garage = Room("You are in the garage there is a door to the south,"
+                  , None, None, 5, None)
     room_list.append(garage)
+    man_cave = Room("You are in the man cave and you have a door to the south"
+                    ".", None, None, 3, None)
+    room_list.append(man_cave)
     # add rest of rooms
 
     while not done:
